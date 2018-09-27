@@ -12,7 +12,7 @@ public class CalculadoraServer {
     public static void main(String[] args) {
         try {
             Registry r = java.rmi.registry.LocateRegistry.createRegistry(1099);//1099 is the port number
-            r.rebind("Calculadora", new Calculadora("Arsenal Football Club, THFC forever in our shadow."));
+            r.rebind("Calculadora", new Calculadora());
             System.out.println("Server is connected and ready for operation.");
         } catch (Exception e) {
             System.out.println("Server not connected: " + e);
