@@ -15,7 +15,7 @@ import java.rmi.server.UnicastRemoteObject;
 public class Calculadora extends UnicastRemoteObject
     implements CalculadoraInterface {
 
-    public Calculadora(String msg) throws RemoteException {}
+    public Calculadora() throws RemoteException {}
     
     public long add(long a, long b)
             throws java.rmi.RemoteException {
